@@ -25,11 +25,12 @@ public class InventoryService {
                 .map(skuCode -> inventoryList.stream()
                         .filter(inventory -> inventory.getSkuCode().equals(skuCode))
                         .findFirst()
-                        .map(inventory -> InventoryResponse.builder()
-                                .skuCode(inventory.getSkuCode())
-                                .isInStock(inventory.getQuantity() > 0)
-                                .build())
-                        .orElse(InventoryResponse.builder()
+                        .map(inventory -> {
+                            InventoryResponse response = modelMapper.map(inventory, InventoryResponse.class);
+                            response.setInStock(inventory.getQuantity() > 0);
+                            return response;
+                        })
+                        .orElseGet(() -> InventoryResponse.builder()
                                 .skuCode(skuCode)
                                 .isInStock(false)
                                 .build()))
