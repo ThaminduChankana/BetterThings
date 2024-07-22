@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1557f35-9b9b-45d0-bcf0-35f04eca09fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/java/org/project/discoveryservice/DiscoveryServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/discovery-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b1557f35-9b9b-45d0-bcf0-35f04eca09fa" name="Changes" comment="Created Discovery Service">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/java/org/project/inventoryservice/InventoryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/project/inventoryservice/InventoryServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/java/org/project/orderservice/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/java/org/project/orderservice/OrderServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/org/project/productservice/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/org/project/productservice/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +45,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Maven.BetterThings [clean,build].executor": "Run",
+    "Maven.BetterThings [clean,install].executor": "Run",
+    "Maven.BetterThings [clean,package].executor": "Run",
     "Maven.BetterThings [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -50,6 +54,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.DiscoveryServiceApplication.executor": "Run",
     "Spring Boot.InventoryServiceApplication.executor": "Run",
     "Spring Boot.OrderServiceApplication.executor": "Run",
     "Spring Boot.ProductServiceApplication.executor": "Run",
@@ -61,13 +66,19 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "reactor",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn clean build" />
       <command value="mvn clean" />
+      <command value="mvn clean build" />
+      <command value="mvn clean install " />
+      <command value="mvn clean package " />
     </option>
   </component>
   <component name="RunDashboard">
@@ -79,7 +90,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DiscoveryServiceApplication">
+  <component name="RunManager" selected="Spring Boot.OrderServiceApplication">
     <configuration name="DiscoveryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="discovery-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.project.discoveryservice.DiscoveryServiceApplication" />
@@ -128,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721378522720</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created Discovery Service">
+      <option name="closed" value="true" />
+      <created>1721622834292</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721622834292</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +155,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created Microservices" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Created Discovery Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Discovery Service" />
   </component>
 </project>
